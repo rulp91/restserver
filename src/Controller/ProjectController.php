@@ -55,7 +55,7 @@ class ProjectController extends AbstractController
             'id' => $provincia[0]->getId(),
             'nombre' => $provincia[0]->getNombre(),
             'descripcion' => nl2br($provincia[0]->getDescripcion(), false),
-            'image_path' => 'http://localhost/assets/images/'.$provincia[0]->getImagenPath(),
+            'image_path' => 'http://webserver.local/assets/images/'.$provincia[0]->getImagenPath(),
         ];
 
         return $this->json($data);
